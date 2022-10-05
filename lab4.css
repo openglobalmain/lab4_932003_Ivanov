@@ -2,6 +2,14 @@
 {
     .ads {display: none;}
 }
+@media (max-width: 745px) 
+{
+    .nav {width: 460;}
+}
+@media (min-width: 745px) 
+{
+    .nav {width: 200px;}
+}
 html {
     height: 100%;
 }
@@ -101,20 +109,20 @@ div#headerrr {
     float: right;
 }
 .nav {
-    float:left;
     position: relative;
-    width: 180px; 
+    min-width: 180px; 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction:column;
+    flex-wrap: wrap
 }
 p
 {
     background-color: #e7e7e7;
 }
 .nav__link {
-    padding: 0px 0px 25px 0px;
-    display: block;
+    padding: 10px 5px 10px 5px;
+    min-width: 180px; 
+    min-height: 40px;
 }
 .nav__link:first-child {
     margin-top: 25px;
