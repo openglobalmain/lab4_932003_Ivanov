@@ -1,14 +1,17 @@
-@media (max-width: 1700px) 
+@media (max-width: 1160px) 
 {
     .ads {display: none;}
 }
 @media (max-width: 745px) 
 {
-    .nav {width: 460;}
+    .nav {width: 420; flex-direction: row;align-items: center; justify-content: center;}
+    .nav__link {width: fit-content; margin: 0 7;}
+
 }
 @media (min-width: 745px) 
 {
-    .nav {width: 200px;}
+    .nav {width: 200px; flex-direction: column;}
+    .nav__link{min-width: 180px; min-height: 40px;    }
 }
 html {
     height: 100%;
@@ -84,7 +87,7 @@ div#headerrr {
 {
     position: fixed;
     width: 200px;
-    right: 380px;
+    right: calc(50% - 600px);
 }
 .left
 {
@@ -109,10 +112,10 @@ div#headerrr {
     float: right;
 }
 .nav {
+    margin-top: 20px;
     position: relative;
     min-width: 180px; 
     display: flex;
-    flex-direction:column;
     flex-wrap: wrap
 }
 p
@@ -121,11 +124,10 @@ p
 }
 .nav__link {
     padding: 10px 5px 10px 5px;
-    min-width: 180px; 
-    min-height: 40px;
+
 }
 .nav__link:first-child {
-    margin-top: 25px;
+    
 }
 .nav__link:hover {
     background-color: #ccd6e6;
